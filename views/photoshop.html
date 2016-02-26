@@ -1,1 +1,12 @@
-<dir-header page='photoshop'></dir>
+<div class="main">
+
+  <dir-header page='photoshop'></dir-header>
+
+  <div ng-repeat='img in image'>
+    <img-dir image='img' currentImg='image' ng-click='expand()'></img-dir>
+  </div>
+
+<!-- Modal -->
+  <dir-viewer></dir-viewer>
+
+</div>
