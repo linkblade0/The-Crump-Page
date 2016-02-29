@@ -3,16 +3,19 @@ angular.module('crumpSite')
 
   var modal = document.getElementById('myModal');
 
-  var img = $scope.image;
+  // var img = document.getElementById('myImg');
   var modalImg = document.getElementById('img01');
+  $scope.vidWindow;
 
-  // img.onclick = function() {
-  //   modal.style.display = 'block';
-  //   modalImg.src = this.src;
-  // }
   $scope.expand = function() {
     modal.style.display = 'block';
-    modalImg.src = img;
+    modalImg.src = 'img/' + this.img.imgUrl;
+  }
+
+  $scope.play = function() {
+    modal.style.dispay = 'block';
+    // $scope.vidWindow = this.vid.vidUrl;
+    console.log(this.vid.vidUrl);
   }
 
   var span = document.getElementById('close');

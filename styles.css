@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Bangers|Josefin+Sans:400,600|Dancing+Script:700);
 
 html, body {
   box-sizing: border-box;
@@ -34,6 +33,22 @@ html, body {
   float: left;
   margin: 3% 0 0 6%;
 }
+
+/*----------------------------------------------------------
+  V I D E O     G A L L E R Y
+  --------------------------------------------------------*/
+  .vids {
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin: 3% 0 0 6%;
+  }
+
+
+
+  /*--------------------------------------------------------
+    M O D A L     D I R E C T O R Y
+  ---------------------------------------------------------*/
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
@@ -126,6 +141,7 @@ html, body {
 header {
   height: 150px;
   width: 100%;
+  min-width: 900px;
   padding: 10px;
   text-align: center;
   background: url('img/grain_background.png');

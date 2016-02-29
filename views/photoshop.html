@@ -3,7 +3,7 @@
   <dir-header page='photoshop'></dir-header>
 
   <div ng-repeat='img in image'>
-    <img-dir image='img' currentImg='image' ng-click='expand()'></img-dir>
+    <img id='myImg' class='pics' ng-click='expand()' ng-src='img/{{img.imgUrl}}'>
   </div>
 
 <!-- Modal -->

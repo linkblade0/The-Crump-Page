@@ -1,1 +1,13 @@
-<dir-header page='videoPage'></dir>
+<div class="main">
+
+  <dir-header page='videoPage'></dir-header>
+
+  <div ng-repeat='vid in video'>
+    <img id='myVid' class='vids' ng-click='play()' ng-src='vids/{{vid.vidImgUrl}}'>
+
+  </div>
+
+<!-- Modal -->
+  <dir-viewer></dir-viewer>
+
+</div>
