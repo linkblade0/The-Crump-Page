@@ -5,6 +5,7 @@ angular.module('crumpSite')
     restrict: 'E',
     templateUrl: 'directives/viewer.html',
     controller: 'viewDirCtrl'
+
   }
 
 })

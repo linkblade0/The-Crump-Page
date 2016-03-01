@@ -3,7 +3,7 @@
   <dir-header page='videoPage'></dir-header>
 
   <div ng-repeat='vid in video'>
-    <img id='myVid' class='vids' ng-click='play()' ng-src='vids/{{vid.vidImgUrl}}'>
+    <img id='myVid' class='vids' ng-click='onYouTubeIframeReady()' ng-src='vids/{{vid.vidImgUrl}}'>
 
   </div>
 
@@ -11,3 +11,5 @@
   <dir-viewer></dir-viewer>
 
 </div>
+
+  <dir-footer></dir-footer>

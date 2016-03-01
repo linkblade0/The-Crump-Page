@@ -16,3 +16,11 @@ angular.module('crumpSite')
 
 }
 })
+
+.directive('dirFooter', function() {
+
+  return {
+    restrict: 'E',
+    templateUrl: 'directives/footer.html'
+  }
+})
