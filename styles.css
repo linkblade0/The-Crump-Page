@@ -4,13 +4,99 @@ html, body {
   margin: 0;
   position: relative;
   background-image: url('img/background.jpg');
-  background-repeat: repeat;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/*---------------------------------------------------------
+  H E A D E R   D I R E C T I V E
+  -------------------------------------------------------*/
+header {
+  height: 150px;
+  width: 100%;
+  /*min-width: 900px;*/
+  padding: 10px;
+  text-align: center;
+  background: #1a0e34;
+  background: linear-gradient(#0E485F, #1C0E35);
+}
+.head {
+  z-index: 1;
+  font-family: fantasy;
+  color: #770505;
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #0000FF;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+nav li {
+  float: left;
+  width: 30%;
+  border-right: 1px solid #ddd;
+  list-style: none;
+}
+
+nav li:first-child {
+  margin-left: 3%;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #4633E8;
+  z-index: 1;
+  position: relative;
+  font-family: serif;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+nav li a:hover {
+  background: #eee;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/*----------------------------------------------------------------
+  F O O T E R   D I R E C T I V E
+  ---------------------------------------------------------------*/
+
+
+  footer {
+    height: 150px;
+    width: 100%;
+    min-width: 900px;
+    padding: 10px;
+    text-align: left;
+    background: #1a0e34;
+    background: linear-gradient(#1C0E35, #0E485F);
+    margin-top: 15px;
+    float: left;
+  }
+
+  .links {
+    width: 75px;
+    height: 75px;
+    float: right;
+    margin: 15px 10px 0 0;
+  }
+
+  .disclaimer {
+    text-align: left;
+    display: inline-block;
+    padding-top: 25px;
+    color: grey;
+  }
 
 /*---------------------------------------------------------
  R E S U M E    V I E W
@@ -38,7 +124,7 @@ html, body {
   height: 300px;
   width: 300px;
   float: left;
-  margin: 3% 0 0 6%;
+  margin: 3% 3% 0 3%;
 }
 
 /*----------------------------------------------------------
@@ -48,7 +134,8 @@ html, body {
     height: 200px;
     width: 300px;
     float: left;
-    margin: 3% 0 0 6%;
+    margin: 3% 3% 0 3%;
+    cursor: pointer;
   }
 
 
@@ -150,59 +237,11 @@ html, body {
         width: 100%;
     }
 }
-/*---------------------------------------------------------
-  H E A D E R   D I R E C T I V E
-  -------------------------------------------------------*/
-header {
-  height: 150px;
-  width: 100%;
-  min-width: 900px;
-  padding: 10px;
-  text-align: center;
-  background: url('img/grain_background.png');
-}
-.head {
-  z-index: 1;
-}
-
-.title {
-  margin-bottom: 0;
-}
-
-nav li {
-  float: left;
-  width: 30%;
-  border-right: 1px solid #ddd;
-  list-style: none;
-}
-
-nav li:first-child {
-  margin-left: 3%;
-}
-
-nav li:last-child {
-  border-right: none;
-}
-
-nav li a {
-  text-decoration: none;
-  color: black;
-  z-index: 1;
-  position: relative;
-}
-
-nav li a:hover {
-  background: #eee;
-}
-
-.hamburger {
-  display: none;
-}
 
 /*-------------------------------------------------------------------
   M E D I A   Q U E R I E S
   ------------------------------------------------------------------*/
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 
   .title {
     margin-top: 0;
@@ -212,42 +251,52 @@ nav li a:hover {
     cursor: pointer;
     padding: 15px;
     display: block;
+    height: 50px;
+    width: 100px;
   }
 
   .line {
     border-bottom: 4px solid #bbb;
     width: 35px;
-    margin-bottom: 6px;
+    margin: 6px;
   }
 
-  /*.line:last-child {
+  .line:last-child {
     margin-bottom: 0;
-  }*/
-  /*ul a {
+  }
+
+
+  ul a {
     display: block;
     padding: 20px;
     padding-right: 0 !important;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     color: #aaa;
     cursor: pointer;
-  }*/
+  }
 
   nav li {
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
     text-align: left;
   }
   nav li a {
-    padding: 20px;
     padding-right: 0 !important;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
     background: grey;
+    max-width: 250px;
+    text-shadow: none;
+    color: black;
   }
+
+  #home {
+    transform: translateX(-10px);
+}
 
   .menu {
     height: 0;
@@ -256,28 +305,6 @@ nav li a:hover {
   }
 
   .open {
-    height: 200px;
+    height: 250px;
   }
 }
-/*----------------------------------------------------------------
-  F O O T E R   D I R E C T I V E
-  ---------------------------------------------------------------*/
-
-
-  footer {
-    height: 150px;
-    width: 100%;
-    min-width: 900px;
-    padding: 10px;
-    text-align: center;
-    background: url('img/grain_background.png');
-    margin-top: 15px;
-    float: left;
-  }
-
-  .links {
-    width: 75px;
-    height: 75px;
-    float: right;
-    margin: 15px 10px 0 0;
-  }
