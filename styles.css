@@ -127,6 +127,11 @@ nav li a:hover {
   margin: 3% 3% 0 3%;
 }
 
+/*.pics:hover {
+  width: 350px;
+  height: 350px;
+}*/
+
 /*----------------------------------------------------------
   V I D E O     G A L L E R Y
   --------------------------------------------------------*/
@@ -135,9 +140,17 @@ nav li a:hover {
     width: 300px;
     float: left;
     margin: 3% 3% 0 3%;
-    cursor: pointer;
   }
 
+  #myVid {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  #myVid:hover {
+    opacity: 0.7;
+  }
 
 
   /*--------------------------------------------------------
@@ -150,7 +163,9 @@ nav li a:hover {
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
